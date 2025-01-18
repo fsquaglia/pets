@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="bg-neutral-100 w-full flex flex-row justify-center sm:justify-between items-center p-4">
       {/*sección izquierda */}
-      <div className="w-72 border hidden sm:block text-center text-sm text-slate-800">
+      <div className="w-72 hidden sm:block text-center text-sm text-slate-800">
         <p>{resposability}</p>
       </div>
       {/*sección central (desarrollador) */}
@@ -14,7 +14,7 @@ function Footer() {
         </p>
       </div>
       {/*sección derecha */}
-      <div className="w-72 border hidden sm:block text-center text-sm text-slate-800">
+      <div className="w-72 hidden sm:block text-center text-sm text-slate-800">
         {cooquie}
       </div>
     </div>

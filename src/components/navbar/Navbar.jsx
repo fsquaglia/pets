@@ -1,22 +1,25 @@
 import { nameApp } from "@/utils/initialSetting";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoIosSearch } from "react-icons/io";
+import { IoMdNotificationsOutline } from "react-icons/io";
+import { FaRegUser } from "react-icons/fa6";
 
 function Navbar() {
   return (
-    <div className="h-full w-full bg-orange-300 flex flex-col gap-2 p-2">
+    <div className="h-full w-full bg-orange-300 flex flex-col gap-2 p-4">
       {/*íconos del navbar */}
-      <div className="flex flex-row">
+      <div className="flex flex-row justify-between antialiased text-slate-600">
         {/*ícono burger, si es necesario */}
-        <div className="size-12 bg-green-500">Burger icon react</div>
-        {/*íconos de búsqueda y sesión */}
-        <div className="flex flex-row gap-2">
-          {/*ícono de acceso a búsqueda */}
-          <div className="size-12 bg-slate-500">Lupa icon react</div>
-          <div className="size-12 bg-pink-500">Campanita icon react</div>
-          <div className="size-12 bg-yellow-500">User icon react</div>
+        <RxHamburgerMenu size={20} />
+        {/*íconos de búsqueda, notificaciones y sesión */}
+        <div className="flex flex-row gap-4">
+          <IoIosSearch size={24} />
+          <IoMdNotificationsOutline size={24} />
+          <FaRegUser size={20} />
         </div>
       </div>
       {/*título de la app */}
-      <div className="text-center text-xl font-light text-orange-800">
+      <div className="text-center text-xl font-light text-slate-100">
         <h1>{nameApp}</h1>
       </div>
     </div>
