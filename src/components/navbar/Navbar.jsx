@@ -2,7 +2,7 @@ import { nameApp } from "@/utils/initialSetting";
 
 function Navbar() {
   return (
-    <div className="h-full w-full bg-blue-500 flex flex-col gap-2 p-2">
+    <div className="h-full w-full bg-orange-300 flex flex-col gap-2 p-2">
       {/*íconos del navbar */}
       <div className="flex flex-row">
         {/*ícono burger, si es necesario */}
@@ -16,7 +16,7 @@ function Navbar() {
         </div>
       </div>
       {/*título de la app */}
-      <div className="text-center text-xl font-light text-blue-800">
+      <div className="text-center text-xl font-light text-orange-800">
         <h1>{nameApp}</h1>
       </div>
     </div>
