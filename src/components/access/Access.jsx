@@ -30,7 +30,11 @@ export default function Access() {
       {[services.slice(0, 4), services.slice(4)].map((row, rowIndex) => (
         <div key={rowIndex} className="flex flex-row justify-center gap-4">
           {row.map((service) => (
-            <Icons key={service.id}>{service.icon}</Icons>
+            <div key={service.id} title={service.label}>
+              <Icons key={service.id} title={service.label}>
+                {service.icon}
+              </Icons>
+            </div>
           ))}
         </div>
       ))}
